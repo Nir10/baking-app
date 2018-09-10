@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/widget_layout_head"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_widget_prev"
+        android:tint="@android:color/white"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_left"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        />
+    <TextView
+        android:layout_weight="1"
+
+        android:textColor="@color/colorText"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/tv_widget_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         />
+        <ImageView
+            android:id="@+id/iv_widget_next"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/white"
+            android:src="@drawable/ic_chevron_right"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/lv_widget_list"
+        android:background="@color/colorPrimaryLight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/widget_layout_head"/>
+
+</RelativeLayout>

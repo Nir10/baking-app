@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_short_description"
+        android:textColor="@color/colorPrimaryText"
+        tools:text="@string/step_short_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_weight="13"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_chevron_right"
+            android:id="@+id/step_chevron_right"
+            android:contentDescription="@string/step_right_chevron"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/divider_step"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"/>
+
+</LinearLayout>

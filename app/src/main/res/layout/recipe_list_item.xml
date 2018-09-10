@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/colorPrimaryLight"
+        app:cardPreventCornerOverlap="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_gravity="center|start"
+                android:id="@+id/iv_recipe"
+                android:src="@drawable/ic_cupcake"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/recipe_image_description"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryText"
+                tools:text="@string/recipe"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/tv_recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center|end"
+                android:textColor="@color/colorPrimaryText"
+                tools:text="@string/serving"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/tv_servings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
